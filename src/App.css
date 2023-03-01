@@ -1,0 +1,28 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: #F5F5F5;
+}
+
+.user-card {
+  padding: 10px;
+  box-shadow: 2px 2px 4px #aaa;
+  width: 75%;
+  margin: 20px auto;
+  display: flex;
+  background-color: white;
+}
+
+.name {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+
+.details {
+  margin: 10px 0px;
+}
