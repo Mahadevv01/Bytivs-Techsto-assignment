@@ -3,7 +3,7 @@ import './App.css';
 
 function App() {
   const [userList, setUserList] = useState([]);
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
 
   const getUser = () => {
     fetch('https://jsonplaceholder.typicode.com/users')
@@ -21,7 +21,12 @@ function App() {
   return (
     <div className="App">
       {
-        loading ? "loading.." :
+        loading ? 
+        <div class="spinner">
+          <div class="bounce1"></div>
+          <div class="bounce2"></div>
+          <div class="bounce3"></div>
+        </div> :
           userList.map((user) => {
             return (
               <div className='user-card'>
